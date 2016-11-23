@@ -9,7 +9,7 @@ s = socket(AF_INET, SOCK_STREAM)    # create a TCP socket
 s.bind ( (myHost, myPort) )
 s.listen (5)
 
-while 1:
+while True:
   connection, address = s.accept() 
-  connection.send("echo Hello World\n")
+  connection.send("echo Hello Resin.io\n")
   connection.close() 
