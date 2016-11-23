@@ -17,6 +17,6 @@ RUN systemctl enable avahi-daemon
 COPY conf/nsswitch.conf /etc/nsswitch.conf
 COPY conf/qotd.service /etc/avahi/services/
 COPY start.sh ./
-copy qotd.py ./
+COPY qotd.py ./
 
 CMD ["bash", "start.sh"]
